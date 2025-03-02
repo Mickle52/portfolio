@@ -1,0 +1,11 @@
+.header-menu {
+  li.ant-menu-item-selected {
+    background-color: #e98074 !important;
+    color: #f7f4e9 !important;
+    font-weight: 700;
+  }
+  li {
+    color: #e98074 !important;
+    font-weight: 700;
+  }
+}

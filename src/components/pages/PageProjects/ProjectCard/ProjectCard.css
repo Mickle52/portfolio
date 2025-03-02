@@ -1,0 +1,49 @@
+.content-card {
+  .ant-card-head {
+    color: #e98074;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #f7f4e9;
+  }
+  .ant-card-body {
+    background-color: #f7f4e9;
+    padding: 14px;
+    .ant-card-meta-description {
+      color: black;
+      margin-bottom: 4px;
+    }
+  }
+
+  .ant-card-cover {
+    > img {
+      border-radius: 0.7rem;
+    }
+  }
+}
+
+.link {
+  width: 50%;
+  height: 40px;
+  cursor: pointer;
+  background-color: #f7f4e9;
+  border: 2px solid #e98074;
+  font-weight: 600;
+  font-size: 14px;
+  &:hover {
+    background-color: #e98074;
+  }
+}
+
+.link-repo {
+  border-right: 1px solid #e98074;
+  border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.link-deploy {
+  border-left: 1px solid #e98074;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.card-cover {
+  height: 400px;
+}

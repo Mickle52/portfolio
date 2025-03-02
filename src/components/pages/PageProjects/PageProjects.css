@@ -1,0 +1,11 @@
+.projects-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+
+.last-test {
+  color: #e98074;
+  font-weight: 700;
+}
