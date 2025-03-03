@@ -31,12 +31,14 @@ const PageProjects = () => {
           cover={"/images/crypto-app-cover.png"}
           linkRepo={""}
           linkDeploy={""}
+          imagesArray={["/images/crypto-app/1.png", "/images/crypto-app/2.png", "/images/crypto-app/3.png", "/images/crypto-app/4.png"]}
         />
         <ProjectCard
           title={"Hangman Game"}
           cover={"/images/hangman-game-cover.png"}
           linkRepo={""}
           linkDeploy={""}
+          imagesArray={["/images/hangman-game/1.png", "/images/hangman-game/2.png", "/images/hangman-game/3.png", "/images/hangman-game/4.png", "/images/hangman-game/5.png",]}
         />
       </div>
     </>

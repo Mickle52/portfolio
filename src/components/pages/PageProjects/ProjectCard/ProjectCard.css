@@ -5,45 +5,89 @@
     font-weight: 700;
     background-color: #f7f4e9;
   }
+
   .ant-card-body {
     background-color: #f7f4e9;
     padding: 14px;
+    padding-top: 0px;
+
     .ant-card-meta-description {
       color: black;
       margin-bottom: 4px;
     }
   }
+}
 
-  .ant-card-cover {
-    > img {
-      border-radius: 0.7rem;
-    }
-  }
+.links-container {
+  max-height: 40px;
+  display: flex;
+  width: 100%;
 }
 
 .link {
+  display: inline;
+  align-items: center;
   width: 50%;
+}
+
+.btn {
+  width: 100%;
   height: 40px;
   cursor: pointer;
   background-color: #f7f4e9;
   border: 2px solid #e98074;
   font-weight: 600;
   font-size: 14px;
+  justify-content: start;
+
   &:hover {
     background-color: #e98074;
   }
 }
 
-.link-repo {
+.btn-repo {
   border-right: 1px solid #e98074;
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.link-deploy {
+.btn-deploy {
   border-left: 1px solid #e98074;
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
-.card-cover {
-  height: 400px;
+
+.card-carousel-image {
+  max-height: 400px;
+  height: auto;
+  max-width: 800px;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.slick-arrow.slick-prev {
+  opacity: 0.6;
+
+  &::after {
+    width: 15px;
+    height: 15px;
+    border-inline-width: 4px 0;
+    border-block-width: 4px 0;
+    inset-inline-start: 3px
+  }
+}
+
+.slick-arrow.slick-next {
+  opacity: 0.6;
+
+  &::after {
+    width: 15px;
+    height: 15px;
+    border-inline-width: 4px 0;
+    border-block-width: 4px 0;
+    inset-inline-start: -3px
+  }
+}
+
+.card-carousel {
+  margin-bottom: 5px;
 }
