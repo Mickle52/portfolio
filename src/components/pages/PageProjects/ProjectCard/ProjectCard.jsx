@@ -1,8 +1,20 @@
-import { Button, Card } from "antd";
+import { Button, Card, Carousel } from "antd";
 const { Meta } = Card;
 import "./ProjectCard.css";
 
+const contentStyle = {
+  margin: 0,
+  height: "160px",
+  color: "#fff",
+  lineHeight: "160px",
+  textAlign: "center",
+  background: "#364d79",
+};
+
 const ProjectCard = ({ cover, title, linkRepo, linkDeploy }) => {
+  const onChange = (currentSlide) => {
+    console.log(currentSlide);
+  };
   return (
     <Card
       className="content-card"
@@ -13,9 +25,30 @@ const ProjectCard = ({ cover, title, linkRepo, linkDeploy }) => {
         border: "2px solid #e98074",
         paddingInline: "14px",
       }}
-      cover={<img alt="example" src={cover} className="card-cover" />}
     >
       <Meta description="This is the description" />
+      <Carousel
+        arrows
+        infinite={true}
+        afterChange={onChange}
+        autoplay={{
+          dotDuration: true,
+        }}
+        autoplaySpeed={5000}
+      >
+        <div>
+          <h3 style={contentStyle}>1</h3>
+        </div>
+        <div>
+          <h3 style={contentStyle}>2</h3>
+        </div>
+        <div>
+          <h3 style={contentStyle}>3</h3>
+        </div>
+        <div>
+          <h3 style={contentStyle}>4</h3>
+        </div>
+      </Carousel>
       <div>
         <a href="/">
           <button className="link link-repo">Ссылка на репо</button>
