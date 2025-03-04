@@ -18,10 +18,6 @@ const ProjectCard = ({
   imagesArray,
   description,
 }) => {
-  const onChange = (currentSlide) => {
-    console.log(currentSlide);
-  };
-
   const imagesArr = imagesArray.map((url) => url);
   console.log(imagesArr);
   return (
@@ -39,16 +35,15 @@ const ProjectCard = ({
       <Carousel
         arrows
         infinite={true}
-        afterChange={onChange}
         autoplay={{
           dotDuration: true,
         }}
         autoplaySpeed={5000}
         className="card-carousel"
       >
-        {imagesArray.map((url) => {
+        {imagesArray.map((url, index) => {
           return (
-            <div className="carousel-container">
+            <div key={imagesArray + index} className="carousel-container">
               <img src={url} alt="1" className="card-carousel-image" />
             </div>
           );

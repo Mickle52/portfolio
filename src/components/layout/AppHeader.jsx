@@ -34,7 +34,7 @@ const AppHeader = ({ onChangePage }) => {
         background: "#0b4141",
       }}
     >
-      <div className="demo-logo" />
+      {/*<div className="demo-logo" />*/}
       <Menu
         className="header-menu"
         theme="dark"
@@ -50,6 +50,41 @@ const AppHeader = ({ onChangePage }) => {
           background: "#0b4141",
         }}
       />
+      <div className="header-contacts">
+        <p className="header-contacts-title">Связь со мной</p>
+        <div className="header-contacts-links">
+          <a href="https://t.me/Michael_Sawage" target="_blank">
+            <img
+              src="/images/icons/telegram-logo.svg"
+              alt=""
+              width="30"
+              height="30"
+              loading="lazy"
+            />
+          </a>
+          {/*<a href="mailto:mickle.simakov@gmail.com" target="_blank">*/}
+          {/*  <img*/}
+          {/*    src="/images/icons/gmail-logo.svg"*/}
+          {/*    alt=""*/}
+          {/*    width="30"*/}
+          {/*    height="30"*/}
+          {/*    loading="lazy"*/}
+          {/*  />*/}
+          {/*</a>*/}
+          <a
+            href="https://hh.ru/resume/b01993feff0e7803170039ed1f6a3852614258"
+            target="_blank"
+          >
+            <img
+              src="/images/icons/hh-logo.png"
+              alt=""
+              width="30"
+              height="30"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
     </Layout.Header>
   );
 };

@@ -75,12 +75,14 @@
 .slick-arrow.slick-prev {
   opacity: 1;
   color: #e98074;
+  z-index: 19;
   &::after {
     width: 15px;
     height: 15px;
     border-inline-width: 4px 0;
     border-block-width: 4px 0;
     inset-inline-start: 3px;
+    z-index: 19;
   }
 }
 
