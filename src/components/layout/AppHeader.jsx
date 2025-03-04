@@ -31,7 +31,7 @@ const AppHeader = ({ onChangePage }) => {
         display: "flex",
         alignItems: "center",
         height: "64px",
-        background: "#f7f4e9",
+        background: "#0b4141",
       }}
     >
       <div className="demo-logo" />
@@ -47,7 +47,7 @@ const AppHeader = ({ onChangePage }) => {
           flex: 1,
           justifyContent: "center",
           minWidth: 0,
-          background: "#f7f4e9",
+          background: "#0b4141",
         }}
       />
     </Layout.Header>

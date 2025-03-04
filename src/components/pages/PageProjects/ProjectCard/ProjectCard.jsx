@@ -11,24 +11,29 @@ const contentStyle = {
   background: "#364d79",
 };
 
-const ProjectCard = ({ cover, title, linkRepo, linkDeploy, imagesArray }) => {
+const ProjectCard = ({
+  title,
+  linkRepo,
+  linkDeploy,
+  imagesArray,
+  description,
+}) => {
   const onChange = (currentSlide) => {
     console.log(currentSlide);
   };
 
-  const imagesArr = imagesArray.map((url) => url)
-  console.log(imagesArr)
+  const imagesArr = imagesArray.map((url) => url);
+  console.log(imagesArr);
   return (
     <Card
       className="content-card"
       title={title}
       style={{
-        maxWidth: '800px',
-        width: '100%',
-        height: 'auto',
+        maxWidth: "800px",
+        width: "100%",
+        height: "auto",
         background: "#f7f4e9",
         border: "2px solid #e98074",
-        paddingInline: "14px",
       }}
     >
       <Carousel
@@ -43,17 +48,18 @@ const ProjectCard = ({ cover, title, linkRepo, linkDeploy, imagesArray }) => {
       >
         {imagesArray.map((url) => {
           return (
-            <div className='carousel-container'>
+            <div className="carousel-container">
               <img src={url} alt="1" className="card-carousel-image" />
-            </div>)
+            </div>
+          );
         })}
       </Carousel>
-      <Meta description="This is the description" />
-      <div className="links-container" >
-        <a href="/" className="link">
-          <button className="btn btn-repo">Ссылка на репо</button>
+      <Meta description={description} />
+      <div className="links-container">
+        <a href={linkRepo} target="_blank" className="link">
+          <button className="btn btn-repo">Ссылка на репозиторий</button>
         </a>
-        <a href="/" className="link">
+        <a href={linkDeploy} target="_blank" className="link">
           <button className="btn btn-deploy">Ссылка на деплой</button>
         </a>
       </div>

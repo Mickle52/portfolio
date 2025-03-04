@@ -1,4 +1,5 @@
 import { Breadcrumb, theme } from "antd";
+import Resume from "./Resume.jsx";
 
 const PageResume = () => {
   const {
@@ -11,9 +12,10 @@ const PageResume = () => {
         style={{
           margin: "16px 0",
         }}
+        separator=">"
       >
         <Breadcrumb.Item>Home</Breadcrumb.Item>
-        <Breadcrumb.Item>Резюме</Breadcrumb.Item>
+        <Breadcrumb.Item className="last-test">Резюме</Breadcrumb.Item>
       </Breadcrumb>
       <div
         style={{
@@ -22,7 +24,7 @@ const PageResume = () => {
           borderRadius: borderRadiusLG,
         }}
       >
-        Resume
+        <Resume></Resume>
       </div>
     </>
   );
