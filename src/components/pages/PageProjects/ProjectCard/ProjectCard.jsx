@@ -16,14 +16,18 @@ const ProjectCard = ({
   linkRepo,
   linkDeploy,
   imagesArray,
+  logosArray,
   description,
 }) => {
   const imagesArr = imagesArray.map((url) => url);
   console.log(imagesArr);
+
+  // const logosArr = logosArray.map((url) => url);
+
   return (
     <Card
       className="content-card"
-      title={title}
+      title={<span>test</span>}
       style={{
         maxWidth: "800px",
         width: "100%",

@@ -18,8 +18,6 @@ const Resume = () => {
           <img
             src="/images/resume-photo.jpg"
             alt=""
-            width="200"
-            height="220"
             loading="lazy"
             className="resume-photo"
           />

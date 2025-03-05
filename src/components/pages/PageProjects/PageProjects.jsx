@@ -37,6 +37,7 @@ const PageProjects = () => {
             "/images/crypto-app/3.png",
             "/images/crypto-app/4.png",
           ]}
+          logosArray={["/images/icons/ts-logo.svg", "/images/icons/react-logo.svg"]}
           description={`TypeScript + React + Ant Design\nПроект для планирования инвестиций в криптовалюту,с актуальным курсом на монеты`}
         />
         <ProjectCard
@@ -51,6 +52,7 @@ const PageProjects = () => {
             "/images/hangman-game/4.png",
             "/images/hangman-game/5.png",
           ]}
+          logosArray={["/images/icons/ts-logo.svg", "/images/icons/react-logo.svg"]}
           description={
             "Проект для планирования инвестиций в криптовалюту, с актуальным курсом на монеты"
           }

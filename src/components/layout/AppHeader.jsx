@@ -62,15 +62,7 @@ const AppHeader = ({ onChangePage }) => {
               loading="lazy"
             />
           </a>
-          {/*<a href="mailto:mickle.simakov@gmail.com" target="_blank">*/}
-          {/*  <img*/}
-          {/*    src="/images/icons/gmail-logo.svg"*/}
-          {/*    alt=""*/}
-          {/*    width="30"*/}
-          {/*    height="30"*/}
-          {/*    loading="lazy"*/}
-          {/*  />*/}
-          {/*</a>*/}
+
           <a
             href="https://hh.ru/resume/b01993feff0e7803170039ed1f6a3852614258"
             target="_blank"

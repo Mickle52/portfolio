@@ -7,8 +7,9 @@ const AppContent = ({ currentPage }) => {
   return (
     <Layout.Content
       style={{
-        minHeight: "calc(100vh - 64px)",
+        minHeight: "calc(100vh - 64px - 50px)",
         background: "#faf0dc",
+        paddingBottom: '20px'
       }}
       className="content-container"
     >
