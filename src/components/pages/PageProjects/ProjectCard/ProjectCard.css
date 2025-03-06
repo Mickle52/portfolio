@@ -57,24 +57,24 @@
   width: 100%;
   height: 40px;
   cursor: pointer;
-  background-color: #f7f4e9;
-  border: 2px solid #e98074;
-  font-weight: 600;
+  background-color: #e98074;
+  border: 2px solid black;
+  font-weight: 800;
   font-size: 14px;
   justify-content: start;
 
   &:hover {
-    background-color: #e98074;
+    background-color: #e85a4f;
   }
 }
 
 .btn-repo {
-  border-right: 1px solid #e98074;
+  border-right: 1px solid black;
   border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .btn-deploy {
-  border-left: 1px solid #e98074;
+  border-left: 1px solid black;
   border-radius: 0 0.5rem 0.5rem 0;
 }
 

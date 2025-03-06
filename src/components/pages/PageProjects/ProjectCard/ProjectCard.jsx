@@ -43,7 +43,7 @@ const ProjectCard = ({
         width: "100%",
         height: "auto",
         background: "#f7f4e9",
-        border: "2px solid #e98074",
+        border: "3px solid #e98074",
       }}
     >
       <Carousel
