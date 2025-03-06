@@ -1,6 +1,6 @@
 import { Layout, Menu } from "antd";
 import { useState } from "react";
-import "./AppHeader.css";
+import "./css/AppHeader.css";
 
 const menuItems = [
   {
@@ -26,7 +26,7 @@ const AppHeader = ({ onChangePage }) => {
       style={{
         position: "sticky",
         top: 0,
-        zIndex: 1,
+        zIndex: 2,
         width: "100%",
         display: "flex",
         alignItems: "center",

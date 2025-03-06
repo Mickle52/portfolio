@@ -1,4 +1,5 @@
 .header-menu {
+  z-index: 10;
   li.ant-menu-item-selected {
     background-color: #e98074 !important;
     color: #f7f4e9 !important;
@@ -15,13 +16,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  z-index: 1000;
+  z-index: 10;
   color: #f7f4e9;
 
   .header-contacts-title {
     height: 35%;
     line-height: 1;
     padding-top: 5px;
+    font-weight: 700;
   }
 
   .header-contacts-links {
@@ -34,13 +36,13 @@
   }
 }
 
-
 @media (max-width: 768px) {
   .ant-layout-header {
     padding-inline: 25px;
   }
 
   .header-menu {
+    z-index: 200;
     li {
       padding-inline: 8px !important;
 

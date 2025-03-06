@@ -37,8 +37,22 @@ const PageProjects = () => {
             "/images/crypto-app/3.png",
             "/images/crypto-app/4.png",
           ]}
-          logosArray={["/images/icons/ts-logo.svg", "/images/icons/react-logo.svg"]}
-          description={`TypeScript + React + Ant Design\nПроект для планирования инвестиций в криптовалюту,с актуальным курсом на монеты`}
+          logosArray={[
+            "/images/icons/ts-logo.svg",
+            "/images/icons/react-logo.svg",
+            "/images/icons/antd-logo.svg",
+          ]}
+          description={
+            <>
+              <p className={"card-description-title"}>
+                TypeScript + React + Ant Design + ChartJS
+              </p>
+              <p>
+                Проект для планирования инвестиций в криптовалюту,с актуальным
+                курсом на монеты
+              </p>
+            </>
+          }
         />
         <ProjectCard
           key={"hangman"}
@@ -52,9 +66,18 @@ const PageProjects = () => {
             "/images/hangman-game/4.png",
             "/images/hangman-game/5.png",
           ]}
-          logosArray={["/images/icons/js-logo.svg", "/images/icons/tailwind-logo.svg"]}
+          logosArray={[
+            "/images/icons/js-logo.svg",
+            "/images/icons/tailwind-logo.svg",
+          ]}
           description={
-            "Проект для планирования инвестиций в криптовалюту, с актуальным курсом на монеты"
+            <>
+              <p className={"card-description-title"}>JavaScript + Tailwind</p>
+              <p>
+                Проект для планирования инвестиций в криптовалюту,с актуальным
+                курсом на монеты
+              </p>
+            </>
           }
         />
       </div>

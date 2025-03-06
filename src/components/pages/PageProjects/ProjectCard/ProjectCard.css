@@ -11,6 +11,13 @@
     .ant-card-head-title {
       display: flex;
       justify-content: center;
+      gap: 3px;
+      align-items: center;
+
+      .card-head-title-logo {
+        width: 25px;
+        height: 25px;
+      }
     }
   }
 
@@ -26,7 +33,7 @@
       text-wrap: wrap;
       font-weight: 600;
 
-      &::first-line {
+      .card-description-title {
         font-weight: 900;
         font-size: 16px;
       }
@@ -83,7 +90,6 @@
 .slick-arrow.slick-prev {
   opacity: 1;
   color: #e98074;
-  z-index: 19;
 
   &::after {
     width: 15px;
@@ -91,7 +97,6 @@
     border-inline-width: 4px 0;
     border-block-width: 4px 0;
     inset-inline-start: 3px;
-    z-index: 19;
   }
 }
 
@@ -108,6 +113,9 @@
   }
 }
 
+.slick-dots.slick-dots-bottom {
+  z-index: 0;
+}
 .card-carousel {
   margin-bottom: 15px;
 }
@@ -117,6 +125,14 @@
     .ant-card-body {
       padding-bottom: 8px;
       padding-inline: 2px;
+    }
+    .ant-card-head {
+      .ant-card-head-title {
+        .card-head-title-logo {
+          width: 18px;
+          height: 18px;
+        }
+      }
     }
   }
 

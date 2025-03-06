@@ -8,7 +8,6 @@ const skillsArr = skillsStr.split(" ").map((skill) => {
     return skill;
   }
 });
-console.log(skillsArr);
 
 const Resume = () => {
   return (
@@ -40,6 +39,11 @@ const Resume = () => {
                 target="_blank"
               >
                 ссылка
+              </a>
+              <br />
+              Мой GitHub:{" "}
+              <a href="https://github.com/Mickle52" target="_blank">
+                Mickle52
               </a>
             </p>
           </div>

@@ -1,6 +1,11 @@
 import { Layout } from "antd";
-import './AppFooter.css'
+import "./css/AppFooter.css";
 
 export default function AppFooter() {
-  return <Layout.Footer className="layout-footer">test</Layout.Footer>
+  return (
+    <Layout.Footer className="layout-footer">
+      <p>TG: @Michael_Sawage</p>
+      <p>Почта: mickle.simakov@gmail.com</p>
+    </Layout.Footer>
+  );
 }

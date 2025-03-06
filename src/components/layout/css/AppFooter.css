@@ -1,0 +1,18 @@
+.layout-footer {
+  background-color: #0b4141;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  padding: 10px 20px;
+  color: white;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 768px) {
+  .layout-footer {
+    font-size: 11px;
+  }
+}

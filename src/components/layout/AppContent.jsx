@@ -1,7 +1,7 @@
 import { Layout } from "antd";
 import PageProjects from "../pages/PageProjects/PageProjects.jsx";
 import PageResume from "../pages/PageResume/PageResume.jsx";
-import './AppContent.css'
+import "./css/AppContent.css";
 
 const AppContent = ({ currentPage }) => {
   return (
@@ -9,7 +9,7 @@ const AppContent = ({ currentPage }) => {
       style={{
         minHeight: "calc(100vh - 64px - 50px)",
         background: "#faf0dc",
-        paddingBottom: '20px'
+        paddingBottom: "20px",
       }}
       className="content-container"
     >

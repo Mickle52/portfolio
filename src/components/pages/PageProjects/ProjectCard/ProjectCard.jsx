@@ -1,15 +1,6 @@
-import { Button, Card, Carousel } from "antd";
+import { Card, Carousel } from "antd";
 const { Meta } = Card;
 import "./ProjectCard.css";
-
-const contentStyle = {
-  margin: 0,
-  height: "160px",
-  color: "#fff",
-  lineHeight: "160px",
-  textAlign: "center",
-  background: "#364d79",
-};
 
 const ProjectCard = ({
   title,
@@ -19,18 +10,34 @@ const ProjectCard = ({
   logosArray,
   description,
 }) => {
-  const imagesArr = imagesArray.map((url) => url);
-  console.log(imagesArr);
+  const imagesArr = imagesArray.map((url, index) => {
+    return (
+      <div key={imagesArray + index} className="carousel-container">
+        <img src={url} alt="1" className="card-carousel-image" />
+      </div>
+    );
+  });
 
   const logosArr = logosArray.map((url) => {
-    return <img src={url} style={{ width: '30px', height: '30px' }}></img>
+    return (
+      <img
+        src={url}
+        alt={"card-title-logo"}
+        className={"card-head-title-logo"}
+        key={url}
+      ></img>
+    );
   });
-  console.log(imagesArr);
 
   return (
     <Card
       className="content-card"
-      title={<><span>{title}</span>{logosArr}</>}
+      title={
+        <>
+          <span>{title}</span>
+          {logosArr}
+        </>
+      }
       style={{
         maxWidth: "800px",
         width: "100%",
@@ -48,13 +55,7 @@ const ProjectCard = ({
         autoplaySpeed={5000}
         className="card-carousel"
       >
-        {imagesArray.map((url, index) => {
-          return (
-            <div key={imagesArray + index} className="carousel-container">
-              <img src={url} alt="1" className="card-carousel-image" />
-            </div>
-          );
-        })}
+        {imagesArr}
       </Carousel>
       <Meta description={description} />
       <div className="links-container">
