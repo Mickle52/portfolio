@@ -15,8 +15,8 @@ const Resume = () => {
       <div className="resume-container">
         <div className="resume-header">
           <img
-            src="/images/resume-photo.jpg"
-            alt=""
+            src="/public/images/resume-photo.jpg"
+            alt="resume-photo"
             loading="lazy"
             className="resume-photo"
           />

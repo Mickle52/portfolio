@@ -32,15 +32,15 @@ const PageProjects = () => {
           linkRepo={"https://github.com/Mickle52/crypto-app"}
           linkDeploy={"https://mickle52.github.io/crypto-app/"}
           imagesArray={[
-            "/images/crypto-app/1.png",
+            "/public/images/crypto-app/1.png",
             "/images/crypto-app/2.png",
-            "/images/crypto-app/3.png",
-            "/images/crypto-app/4.png",
+            "/public/images/crypto-app/3.png",
+            "/public/images/crypto-app/4.png",
           ]}
           logosArray={[
-            "/images/icons/ts-logo.svg",
-            "/images/icons/react-logo.svg",
-            "/images/icons/antd-logo.svg",
+            "/public/images/icons/ts-logo.svg",
+            "/public/images/icons/react-logo.svg",
+            "/public/images/icons/antd-logo.svg",
           ]}
           description={
             <>
@@ -60,15 +60,15 @@ const PageProjects = () => {
           linkRepo={"https://github.com/Mickle52/hangman-game-js-tailwind"}
           linkDeploy={"https://mickle52.github.io/hangman-game-js-tailwind/"}
           imagesArray={[
-            "/images/hangman-game/1.png",
-            "/images/hangman-game/2.png",
-            "/images/hangman-game/3.png",
-            "/images/hangman-game/4.png",
-            "/images/hangman-game/5.png",
+            "/public/images/hangman-game/1.png",
+            "/public/images/hangman-game/2.png",
+            "/public/images/hangman-game/3.png",
+            "/public/images/hangman-game/4.png",
+            "/public/images/hangman-game/5.png",
           ]}
           logosArray={[
-            "/images/icons/js-logo.svg",
-            "/images/icons/tailwind-logo.svg",
+            "/public/images/icons/js-logo.svg",
+            "/public/images/icons/tailwind-logo.svg",
           ]}
           description={
             <>
