@@ -55,7 +55,7 @@ const AppHeader = ({ onChangePage }) => {
         <div className="header-contacts-links">
           <a href="https://t.me/Michael_Sawage" target="_blank">
             <img
-              src="/images/icons/telegram-logo.svg"
+              src="images/icons/telegram-logo.svg"
               alt=""
               width="30"
               height="30"
@@ -68,7 +68,7 @@ const AppHeader = ({ onChangePage }) => {
             target="_blank"
           >
             <img
-              src="/images/icons/hh-logo.png"
+              src="images/icons/hh-logo.png"
               alt=""
               width="30"
               height="30"
