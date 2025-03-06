@@ -22,12 +22,15 @@ const ProjectCard = ({
   const imagesArr = imagesArray.map((url) => url);
   console.log(imagesArr);
 
-  // const logosArr = logosArray.map((url) => url);
+  const logosArr = logosArray.map((url) => {
+    return <img src={url} style={{ width: '30px', height: '30px' }}></img>
+  });
+  console.log(imagesArr);
 
   return (
     <Card
       className="content-card"
-      title={<span>test</span>}
+      title={<><span>{title}</span>{logosArr}</>}
       style={{
         maxWidth: "800px",
         width: "100%",

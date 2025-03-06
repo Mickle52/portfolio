@@ -52,7 +52,7 @@ const PageProjects = () => {
             "/images/hangman-game/4.png",
             "/images/hangman-game/5.png",
           ]}
-          logosArray={["/images/icons/ts-logo.svg", "/images/icons/react-logo.svg"]}
+          logosArray={["/images/icons/js-logo.svg", "/images/icons/tailwind-logo.svg"]}
           description={
             "Проект для планирования инвестиций в криптовалюту, с актуальным курсом на монеты"
           }
