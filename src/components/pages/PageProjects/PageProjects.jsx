@@ -59,6 +59,34 @@ const PageProjects = () => {
           }
         />
         <ProjectCard
+          key={"rick&morty"}
+          title={"Rick&Morty"}
+          linkRepo={"https://github.com/Mickle52/crypto-app"}
+          linkDeploy={"https://mickle52.github.io/crypto-app/"}
+          imagesArray={[
+            "images/rickmorty/1.png",
+            "images/rickmorty/2.png",
+            "images/rickmorty/3.png",
+          ]}
+          logosArray={[
+            "images/icons/js-logo.svg",
+            "images/icons/react-logo.svg",
+          ]}
+          description={
+            <>
+              <p className={"card-description-title"}>
+                JavaScript + React + Styled Components
+              </p>
+              <p>
+                Проект с подключенным OpenAPI Rick&Morty. С фукнцией подгрузки и
+                отображения информации о персонажах, эпизодах и т.д. С функией
+                поиска и фильтрации по имени, статусу и гендеру. Также присутствует
+                пагинация.
+              </p>
+            </>
+          }
+        />
+        <ProjectCard
           key={"hangman"}
           title={"Hangman Game"}
           linkRepo={"https://github.com/Mickle52/hangman-game-js-tailwind"}
