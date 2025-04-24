@@ -61,8 +61,8 @@ const PageProjects = () => {
         <ProjectCard
           key={"rick&morty"}
           title={"Rick&Morty"}
-          linkRepo={"https://github.com/Mickle52/crypto-app"}
-          linkDeploy={"https://mickle52.github.io/crypto-app/"}
+          linkRepo={"https://github.com/Mickle52/rick_i_morty"}
+          linkDeploy={"https://mickle52.github.io/rick_i_morty/"}
           imagesArray={[
             "images/rickmorty/1.png",
             "images/rickmorty/2.png",
